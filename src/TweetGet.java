@@ -39,11 +39,11 @@ public final class TweetGet {
 	static TwitterStream twitterStream;
 	
 	//database
-	static final String dbName = "TwitterDB";
-    static final String userName = "vannirobben"; 
-    static final String password = "918273Ybf"; 
-    static final String hostname = "aa1jv5lzy76q9qz.cfhq9puir1a1.us-east-1.rds.amazonaws.com";
-    static final String port = "3306";
+	static final String dbName = "";
+    static final String userName = ""; 
+    static final String password = ""; 
+    static final String hostname = "";
+    static final String port = "";
     
     static Queue<Status> myQueue = new PriorityQueue<Status>();
     
@@ -63,10 +63,10 @@ public final class TweetGet {
     	//Twitter connect
     	 ConfigurationBuilder cb = new ConfigurationBuilder();
          cb.setDebugEnabled(true)
-           .setOAuthConsumerKey("Z3jU6h67JPSFpsvMFF1oRnkYE")
-           .setOAuthConsumerSecret("iiy4BnLNgxg15NpUQ7frUMrySm4nzinSKibRbiPuutx0G5kxPJ")
-           .setOAuthAccessToken("537403242-gwVka5YUGymdSTfCq5m8JBGnLkn7HE0UZxt8PGNF")
-           .setOAuthAccessTokenSecret("M0g7mZLatLSrXWOj7vJtBFLFmcRu2bA0MH1EmsX97mIyc");
+           .setOAuthConsumerKey("")
+           .setOAuthConsumerSecret("")
+           .setOAuthAccessToken("")
+           .setOAuthAccessTokenSecret("");
          
         twitterStream = new TwitterStreamFactory(cb.build()).getInstance();
         
